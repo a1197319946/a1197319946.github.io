@@ -83,6 +83,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="疯狂DD" type="application/atom+xml" />
 
@@ -98,15 +100,15 @@
 
 <meta name="description" content="引言最近辞职，开始了一轮又一轮腥风血雨的面试，开个专栏，记录下面试中的各种疑难杂症问题，面试的公司有58企服、便利蜂，美团等，给大家分享下。专栏将分为几部分：java基础、数据库部分、分布式架构中间件部分、网络及算法部分。本篇来说下基础部分。博主刚毕业一年，加上大四一年外包经验，工作两年，本以为面试应该比较轻松，面了发现还是挺难的……  可谓雄关漫道真如铁，而今迈步从头越，从头越，苍山如海，残阳如">
 <meta property="og:type" content="article">
-<meta property="og:title" content="疯狂DD">
-<meta property="og:url" content="https://a1197319946.github.io/2017/12/15/Java面试之路（一）Java基础部分/index.html">
+<meta property="og:title" content="Java面试之路（一）Java基础部分">
+<meta property="og:url" content="https://a1197319946.github.io/2017/12/29/Java面试之路（一）Java基础部分/index.html">
 <meta property="og:site_name" content="疯狂DD">
 <meta property="og:description" content="引言最近辞职，开始了一轮又一轮腥风血雨的面试，开个专栏，记录下面试中的各种疑难杂症问题，面试的公司有58企服、便利蜂，美团等，给大家分享下。专栏将分为几部分：java基础、数据库部分、分布式架构中间件部分、网络及算法部分。本篇来说下基础部分。博主刚毕业一年，加上大四一年外包经验，工作两年，本以为面试应该比较轻松，面了发现还是挺难的……  可谓雄关漫道真如铁，而今迈步从头越，从头越，苍山如海，残阳如">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20171117144601868?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZnJpZ2h0aW5nZm9yYW1iaXRpb24=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-12-15T10:04:17.000Z">
+<meta property="og:updated_time" content="2017-12-29T11:32:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="疯狂DD">
+<meta name="twitter:title" content="Java面试之路（一）Java基础部分">
 <meta name="twitter:description" content="引言最近辞职，开始了一轮又一轮腥风血雨的面试，开个专栏，记录下面试中的各种疑难杂症问题，面试的公司有58企服、便利蜂，美团等，给大家分享下。专栏将分为几部分：java基础、数据库部分、分布式架构中间件部分、网络及算法部分。本篇来说下基础部分。博主刚毕业一年，加上大四一年外包经验，工作两年，本以为面试应该比较轻松，面了发现还是挺难的……  可谓雄关漫道真如铁，而今迈步从头越，从头越，苍山如海，残阳如">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171117144601868?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZnJpZ2h0aW5nZm9yYW1iaXRpb24=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
@@ -117,13 +119,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -137,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://a1197319946.github.io/2017/12/15/Java面试之路（一）Java基础部分/"/>
+  <link rel="canonical" href="https://a1197319946.github.io/2017/12/29/Java面试之路（一）Java基础部分/"/>
 
 
 
 
 
-  <title> | 疯狂DD</title>
+  <title>Java面试之路（一）Java基础部分 | 疯狂DD</title>
   
 
 
@@ -286,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://a1197319946.github.io/2017/12/15/Java面试之路（一）Java基础部分/">
+    <link itemprop="mainEntityOfPage" href="https://a1197319946.github.io/2017/12/29/Java面试之路（一）Java基础部分/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="D_xiao">
@@ -303,7 +305,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline"></h2>
+          <h2 class="post-title" itemprop="name headline">Java面试之路（一）Java基础部分</h2>
         
 
         <div class="post-meta">
@@ -315,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-15T18:04:17+08:00">
-                2017-12-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T19:32:38+08:00">
+                2017-12-29
               </time>
             
 
@@ -334,6 +336,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -573,8 +580,8 @@ JVM运行空间中无法通过根集合到达(找到)时,这个对象被称为�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/15/test1/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/12/29/test1/" rel="next" title="Java面试之路（二）数据库部分">
+                <i class="fa fa-chevron-left"></i> Java面试之路（二）数据库部分
               </a>
             
           </div>
@@ -582,10 +589,6 @@ JVM运行空间中无法通过根集合到达(找到)时,这个对象被称为�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/29/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -766,7 +769,7 @@ JVM运行空间中无法通过根集合到达(找到)时,这个对象被称为�
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2018 - 
+  &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -789,6 +792,26 @@ JVM运行空间中无法通过根集合到达(找到)时,这个对象被称为�
 -->
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
         
       </div>

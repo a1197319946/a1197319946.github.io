@@ -98,14 +98,14 @@
 
 <meta name="description" content="由于本人只用过mysql数据库，所以本文整理的面试题也是基于mysql数据库的。  画外音：以前一直觉得为什么面试非要问你原理性的东西呢，开发的工作是利用我们学的去创造一些东西，能达到目的不就行了，为什么买个车还要知道车轱辘是怎么造的？ 最近面试的几天，我慢慢明白了，一方面你对一个工具了解的多，更容易避免一些问题或想到一些更好的方法，另外一个很重要的方面，面试官可能想间接的了解你平日的工作情况，除">
 <meta property="og:type" content="article">
-<meta property="og:title" content="疯狂DD">
-<meta property="og:url" content="https://a1197319946.github.io/2017/12/15/test1/index.html">
+<meta property="og:title" content="Java面试之路（二）数据库部分">
+<meta property="og:url" content="https://a1197319946.github.io/2017/12/29/test1/index.html">
 <meta property="og:site_name" content="疯狂DD">
 <meta property="og:description" content="由于本人只用过mysql数据库，所以本文整理的面试题也是基于mysql数据库的。  画外音：以前一直觉得为什么面试非要问你原理性的东西呢，开发的工作是利用我们学的去创造一些东西，能达到目的不就行了，为什么买个车还要知道车轱辘是怎么造的？ 最近面试的几天，我慢慢明白了，一方面你对一个工具了解的多，更容易避免一些问题或想到一些更好的方法，另外一个很重要的方面，面试官可能想间接的了解你平日的工作情况，除">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-15T09:59:26.000Z">
+<meta property="og:updated_time" content="2017-12-29T11:32:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="疯狂DD">
+<meta name="twitter:title" content="Java面试之路（二）数据库部分">
 <meta name="twitter:description" content="由于本人只用过mysql数据库，所以本文整理的面试题也是基于mysql数据库的。  画外音：以前一直觉得为什么面试非要问你原理性的东西呢，开发的工作是利用我们学的去创造一些东西，能达到目的不就行了，为什么买个车还要知道车轱辘是怎么造的？ 最近面试的几天，我慢慢明白了，一方面你对一个工具了解的多，更容易避免一些问题或想到一些更好的方法，另外一个很重要的方面，面试官可能想间接的了解你平日的工作情况，除">
 
 
@@ -115,13 +115,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="https://a1197319946.github.io/2017/12/15/test1/"/>
+  <link rel="canonical" href="https://a1197319946.github.io/2017/12/29/test1/"/>
 
 
 
 
 
-  <title> | 疯狂DD</title>
+  <title>Java面试之路（二）数据库部分 | 疯狂DD</title>
   
 
 
@@ -284,7 +284,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://a1197319946.github.io/2017/12/15/test1/">
+    <link itemprop="mainEntityOfPage" href="https://a1197319946.github.io/2017/12/29/test1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="D_xiao">
@@ -301,7 +301,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline"></h2>
+          <h2 class="post-title" itemprop="name headline">Java面试之路（二）数据库部分</h2>
         
 
         <div class="post-meta">
@@ -313,8 +313,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-15T17:59:26+08:00">
-                2017-12-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T19:32:04+08:00">
+                2017-12-29
               </time>
             
 
@@ -332,6 +332,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -511,14 +516,18 @@ select .... for update
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/12/29/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/15/Java面试之路（一）Java基础部分/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/29/Java面试之路（一）Java基础部分/" rel="prev" title="Java面试之路（一）Java基础部分">
+                Java面试之路（一）Java基础部分 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -700,7 +709,7 @@ select .... for update
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2018 - 
+  &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -723,6 +732,26 @@ select .... for update
 -->
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
         
       </div>
